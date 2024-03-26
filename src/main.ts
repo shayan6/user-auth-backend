@@ -8,7 +8,7 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe({ whitelist: true }))
 
   const config = new DocumentBuilder()
-    .setTitle('Your API Title')
+    .setTitle('Fudy users API')
     .setDescription('API description')
     .setVersion('1.0')
     .build();
