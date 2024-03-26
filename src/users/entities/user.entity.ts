@@ -1,6 +1,6 @@
 import { BeforeInsert, Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import * as bcrypt from 'bcrypt'
-import { Comment } from "../../comments/entities/comment.entity";
+import { Order } from "../../orders/entities/order.entity";
 
 @Entity('user')
 export class User {
@@ -20,8 +20,8 @@ export class User {
     @Column({ nullable: false })
     phone: string
 
-    @OneToMany(() => Comment, comment => comment.user)
-    comments: Comment[]
+    @OneToMany(() => Order, order => order.user)
+    orders: Order[]
 
     @BeforeInsert()
     async hashPassword() {

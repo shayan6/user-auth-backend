@@ -4,7 +4,7 @@ import { JwtGuard } from '../auth/guard/jwt.guard';
 import { ApiTags } from '@nestjs/swagger';
 
 
-@ApiTags('comments')
+@ApiTags('orders')
 @Controller('users')
 export class UsersController {
 

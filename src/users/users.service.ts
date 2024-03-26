@@ -26,7 +26,7 @@ export class UsersService {
 
     async getUserById(userId: string) {
 
-        const user = await this.userRepository.findOne({ where: { id: userId }, relations: { comments: true } })
+        const user = await this.userRepository.findOne({ where: { id: userId }, relations: { orders: true } })
 
         return user
 

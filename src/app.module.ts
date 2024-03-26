@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { UsersModule } from './users/users.module';
-import { CommentsModule } from './comments/comments.module';
+import { OrdersModule } from './orders/orders.module';
 import { AuthModule } from './auth/auth.module';
 import { TypeOrmModule } from '@nestjs/typeorm'
 
@@ -23,7 +23,7 @@ import { TypeOrmModule } from '@nestjs/typeorm'
 
     UsersModule,
 
-    CommentsModule,
+    OrdersModule,
 
     AuthModule,
 

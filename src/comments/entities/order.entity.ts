@@ -1,8 +1,8 @@
 import { User } from "../../users/entities/user.entity";
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity('comments')
-export class Comment {
+@Entity('orders')
+export class Order {
 
     @PrimaryGeneratedColumn('uuid')
     id: string
@@ -10,7 +10,7 @@ export class Comment {
     @Column()
     text: string
 
-    @ManyToOne(() => User, user => user.comments, { onDelete: 'SET NULL', cascade: true })
+    @ManyToOne(() => User, user => user.orders, { onDelete: 'SET NULL', cascade: true })
     user: User
 
 }
