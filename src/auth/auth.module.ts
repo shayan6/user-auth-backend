@@ -23,7 +23,7 @@ import { RefreshJwtStrategy } from './strategy/refresh-token.strategy';
     JwtModule.register({
 
       secret: 'secret-key',
-      signOptions: { expiresIn: '1m' }
+      signOptions: { expiresIn: '10m' }
 
     })
 

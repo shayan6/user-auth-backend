@@ -26,6 +26,9 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+![Screenshot 1](/swagger.jpg)
+*Screenshot of swagger apis*
+
 ## Installation
 
 ```bash
